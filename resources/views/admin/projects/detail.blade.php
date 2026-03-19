@@ -39,10 +39,10 @@
                 <h3 class="text-lg font-bold text-gray-800 mb-4">Berikan Suara Anda:</h3>
                 <form action="{{ route('project.vote', $project->id) }}" method="POST" class="flex flex-wrap gap-4">
                     @csrf
-                    <button type="submit" name="suara" value="setuju" class="w-full md:w-auto px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg shadow transition flex items-center justify-center text-lg">
+                    <button type="submit" name="suara" value="setuju" class="w-full md:w-auto px-8 py-3 bg-green-500 hover:bg-green-600 text-black font-bold rounded-lg shadow transition flex items-center justify-center text-lg">
                         👍 Saya Setuju
                     </button>
-                    <button type="submit" name="suara" value="tidak_setuju" class="w-full md:w-auto px-8 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg shadow transition flex items-center justify-center text-lg">
+                    <button type="submit" name="suara" value="tidak_setuju" class="w-full md:w-auto px-8 py-3 bg-red-500 hover:bg-red-600 text-black font-bold rounded-lg shadow transition flex items-center justify-center text-lg">
                         👎 Tidak Setuju
                     </button>
                 </form>

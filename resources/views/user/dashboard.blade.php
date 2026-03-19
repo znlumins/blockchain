@@ -32,10 +32,10 @@
 
                     <form action="{{ route('project.vote', $p->id) }}" method="POST" class="flex gap-4 border-t pt-4">
                         @csrf
-                        <button type="submit" name="suara" value="setuju" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded flex justify-center items-center">
+                        <button type="submit" name="suara" value="setuju" class="w-full bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-4 rounded flex justify-center items-center">
                             👍 Setuju
                         </button>
-                        <button type="submit" name="suara" value="tidak_setuju" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded flex justify-center items-center">
+                        <button type="submit" name="suara" value="tidak_setuju" class="w-full bg-red-500 hover:bg-red-600 text-black font-bold py-2 px-4 rounded flex justify-center items-center">
                             👎 Tidak Setuju
                         </button>
                     </form>

@@ -16,7 +16,8 @@ WORKDIR /var/www/html
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer install --no-dev --optimize-autoloader
+# Ganti baris composer install lama dengan ini:
+RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 # Atur permission folder storage
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
